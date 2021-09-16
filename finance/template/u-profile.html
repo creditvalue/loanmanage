@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- template css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assest/css/style2.css' %}">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  
+    <section id="u-header" class="u-header">
+      <div class="container-fluid">
+        <div class="u-header">
+          <div class="row">
+            <div class="col-4">
+              <div class="u-profile">
+                <!--<a href="/udateimage"> -->
+                <img src="\media\{{user.image}}">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="u-name text-center">
+                <p>{{ user.first_name}}</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="u-balance text-right">
+                <label for="html">Balance:-</label><br>
+                <input type="text-center" name="country" value="{{ user.balance}}" readonly><br><br>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+          <strong>successfully!:-</strong>{{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}    
+    <!-- all  transaction ========= -->
+    <section id="all-transaction" class="all-transaction">
+      <div class="container">
+        <div class="title">
+          <h6>Transfer Money:-</h6>
+        </div>
+        <div class="row">
+          <div class="col-3 text-center">
+            <div class="transaction">
+             <a href="/sendmon"><i class='bx bxs-user'></i></a>
+              <p>Wallet To Wallet</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="transaction">
+              <i class='bx bxs-bank'></i>
+              <p>wallet to bank</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="transaction">
+              <a href="/applyloan"><i class='bx bx-rupee'></i></a>
+              <p>Apply loans</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="transaction">
+              <a href="/addmoney"><i class='bx bxs-wallet'></i></a>
+              <p>add in wallet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!----end transection -------->
+    <!-- ================= ALL-USER========== -->
+    <section id="all-user" class="all-user">
+      <div class="container">
+        <div class="title">
+          <h5>All Users</h5>
+        </div>
+        <div class="user-scroll">
+          <div class="row">
+          {% for user in User reversed %}
+            <div class="col-4 text-center">
+              <img src="/media/{{user.image}}">
+              <p>{{user.first_name}}</p>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ END USER =========== -->
+    <section id="user-history" class="user-history">
+      <div class="container">
+        <div class="user-title">
+          <div class="heading">
+            <h4>A/C Statement</h4>
+          </div>
+        </div>
+        <div class="history-scroll">
+          <div style="overflow-x:auto;">
+          {% for hist in Uhistory reversed %}    
+            <div class="hisdetails">
+              <div class="row">
+                <div class="col-6">
+                  <span style="color: #fff;">{{hist.histype}}:-</span><br>
+                  <span style="color: #fff;">{{hist.ufrom}}</span>
+                </div>
+                <div class="col-6 text-right">
+                  <span style="color: #FFCC33;">Rs:-{{hist.dmoney}}</span><br>
+                  <span style="color: #fff;">{{hist.date}}</span>
+                </div> 
+              </div>
+            </div>
+          {% endfor %}   
+          </div>
+        </div>
+      </div>
+    </section><!---end history -->
+    <div style="text-align: center; padding: 8px 2px 12px 1px;">
+      <button><a href="/">logout</a></button>
+    </div>  
+    
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+    <!--template css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assest/css/style1.css' %}">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+                          <!--======HEADER====== -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+        <h1><a href="index.html"><span>LOAN</span></a></h1>
+        </div>
+
+        <!-- nav bar -->
+         <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/u_profile">Passbook</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+         <!--  <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
+         <!--    <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul> -->
+          </li>
+          <li><a class="nav-link scrollto" href="register">Login</a></li>
+        </ul>
+        <i class="bx bx-list-ul mobile-nav-toggle">
+        </i>
+      </nav><!-- .navbar -->
+      </div>
+      
+    </header>
+    <!-- ======HERO SECTION ================ -->
+    <section id="hero" class="hero">
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="{% static 'assest\img\homeloan.jpeg' %}" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'assest\img\personalloan.jpeg' %}" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'assest\img\personalloan.jpeg' %}" alt="Third slide">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- -=====================ABOUTS=========================- -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title ">
+          <h2>about us</h2>
+        </div>
+        <!-- <p> hello ji my name is aman kumar class bca final year </p> -->
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-down-left">
+            <div class="h-about">
+              <i class='bx bxs-user'></i>
+              <h2> Who we are </h2>
+              <p>Credit Value Finance and Marketing . एक साथ Finance and Marketing  क्षेत्र में काम करने वाली Section -08 company है। जो सरकारी, प्राइवेट बैंक,NBFC (Non Banking Finance corporation), वा अपने Landing Partners के DSA(Direct selling agent)  बैंक मित्र के माध्यम से कार्य करते हैं। जिसका मकसद उपभोक्ता को Finance और Marketing की बेहतर सेवा प्रदान करना है। जिसके लिए वित्तीय संस्थाओं के साथ मिलकर सांझा कार्यक्रम पर काम किया जाता है।</p>
+            </div>
+            <div class="h-about">
+              <i class='bx bxs-hand-right'></i>
+              <h2> Financial</h2>
+              <p>
+               किसी भी व्यापार को करने वा चलाने के लिए पूंजी की जरूरत होती है। और व्यापारी जानकारी के अभाव में भारी भरकम ब्याज ओर परेशानी वाला कर्जा लेने को मजबूर हैं। अगर आम आदमी Banking System को समझ लेता है तो वह मोटे ब्याज वा परेशानी से छुटकारा पा सकता है</p>
+            </div>
+            <div class="h-about">
+              <i class='bx bxs-bank' ></i>
+              <h2>Marketing</h2>
+              <p>
+               हमारे साथ छोटे - बड़े व्यापारी, स्वयं सहायता समूहों, ओर Retail Costomers का विशाल समूह जुड़ा हुआ है हम अपने Marketing Platform को सभी को इस्तेमाल करने की सुविधा देते हैं। जिससे दुकानदार को ग्राहक वा ग्राहक को सही Product, Rates, Quality , ओर Discount , पर उपलब्ध हो जायेगा। जिससे दुकानदार और ग्राहक दोनो को फायदा होता है।</p>
+            </div>
+          </div>
+          <div class="col-lg-6 about-image" data-aos="flip-left">
+            <img class="d-block w-100" src="{% static 'assest\img\Kirana-Store.jpg' %}">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- ================Our Value=======================  -->
+    <section id="values" class="values">
+      <div class="container">  
+        <div class="row"> 
+           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card" style="background-image: url({% static 'assest\img\saksarta.jpg' %});">
+              <div class="card-body">
+                <h5 class="card-title">वित्तीय शिक्षा</h5>
+                <p class="card-text">"वित्तीय शिक्षा" का अर्थ होता है, "धन" के बारे में सही जानकारी प्राप्त करना, जिससे हम अपने "धन" का सही प्रबंधन करते हुए, अपने वित्तीय भविष्य को सुरक्षित एवं बेहतर बना सकें l</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+            <div class="card" style="background-image: url({% static 'assest\img\groups.jpg' %});">
+              <div class="card-body">
+                <h5 class="card-title">वित्तीय सहायता</h5>
+                <p class="card-text">सूक्ष्म वित्तीय सहायता प्रदान करना। जिससे समाज में असंगठित क्षेत्र के कामगार, व्यापारी, महिलाओं को वित्तीय सहायता उपलब्ध करवाना।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- -=====================services=========================- -->
+    <section id="services" class="services services-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Service</h2>  
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-bank"></i></i></div>
+              <h4 class="title"><a href="">Banking</a></h4>
+              <p class="description">आज भी भारत का बहुत बड़ा तबका बैंकिंग सेवाओं से वंचित हैं। हम अपने DSA, CSC CENTER, वा बैंक मित्र के माध्यम से आम लोगों को बैंकिंग सेवाओं को इस्तेमाल करने के लिए प्रोत्साहित करना</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bxs-donate-heart'></i></div>
+              <h4 class="title"><a href="">Insurance</a></h4>
+              <p class="description">पॉलिसी अवधि के दौरान बीमित व्यक्ति की मृत्यु हो जाने या किसी दुर्घटना के कारण अपंग हो जाने की स्थिति में जीवन बीमा उत्पाद, एक निश्चित मात्रा में धनराशि प्रदान करते हैं। </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-hand-right"></i></div>
+              <h4 class="title"><a href="">Loans/Credits</a></h4>
+              <p class="description">Loan देना या loaning का मतलब होता है एक व्यक्ति जिसके पास धन है वो किसी दुसरे individual या entity को वह धन प्रदान कर रहा है.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ========= Our Products ====================== -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our Products</h2>
+        </div>
+        <div class="row">
+         
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">Personal Loan</h3>
+              <p class="pr-desc">Select the best offer curated just for you</p>
+              <div class="icon"><i class='bx bxs-user'></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">Business loans</h3>
+              <p class="pr-desc">Get business loans with lowest interest rates</p>
+              <div class="icon"><i class='bx bxs-briefcase'></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">(Under ₹50K)</h3>
+              <p class="pr-desc">Get loans under 50k for immediate cash needs</p>
+              <div class="icon"><i class='bx bx-rupee' ></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">home loans</h3>
+              <p class="pr-desc">Available lower interest for your dream home</p>
+              <div class="icon"><i class='bx bxs-home-smile'></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">Gold loans</h3>
+              <p class="pr-desc">liquidity by Securing a loan against your gold </p>
+              <div class="icon"><i class='bx bxs-cuboid' style="transform: rotate(250deg);"></i></div>
+            </div>
+          </div>
+           <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">saving account</h3>
+              <p class="pr-desc">Open Saving Account</p>
+              <div class="icon"><i class='bx bxs-bank' ></i></div>
+            </div>
+          </div>
+          {% comment %} <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">Personal Loan</h3>
+              <p class="pr-desc">Select the best offer curated just for you</p>
+              <div class="icon"><i class='bx bxs-user'></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">Business loans</h3>
+              <p class="pr-desc">Get business loans with lowest interest rates</p>
+              <div class="icon"><i class='bx bxs-briefcase'></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">(Under ₹50K)</h3>
+              <p class="pr-desc">Get loans under 50k for immediate cash needs</p>
+              <div class="icon"><i class='bx bx-rupee' ></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">home loans</h3>
+              <p class="pr-desc">Available lower interest for your dream home</p>
+              <div class="icon"><i class='bx bxs-home-smile'></i></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">Gold loans</h3>
+              <p class="pr-desc">liquidity by Securing a loan against your gold </p>
+              <div class="icon"><i class='bx bxs-cuboid' style="transform: rotate(250deg);"></i></div>
+            </div>
+          </div>
+           <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <h3 class="pr-name">saving account</h3>
+              <p class="pr-desc">Open Saving Account</p>
+              <div class="icon"><i class='bx bxs-bank' ></i></div>
+            </div>
+          </div> {% endcomment %}
+        </div>
+      </div> 
+    </section>
+
+    <!-- ========= end Products ====================== -->
+
+    <!-- ========= Our banks ====================== -->
+    {% comment %} <section id="our-banking" class="our-banking">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>financial service provider</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+               <img class="d-block w-100" src="{% static 'assest\img\personalloan.jpeg' %}" alt="First slide">
+              <p class="pr-desc">Select the best offer curated just for you</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-4" data-aos="fade-up">
+            <div class="pr-body">
+              <p class="pr-desc">Select the best offer curated just for you</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section> {% endcomment %}
+
+    <!-- ========= end banking ====================== -->    
+    <!-- ===========-contact-==========-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Mugal Canal, Karnal, SCO 410 2nd Floor</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>loan@example.com<br>co@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>9817067943<br>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     </section> <!--end contact -->
+
+     <!-- =============End contact============----------- -->
+
+    <!-- ============= Our footer============----------- -->
+     <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Loans</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <!-- template main js -->
+    <script src="{% static 'assest/js/main1.js' %}"></script>
+    <script>
+      AOS.init();
+    </script>  
+  </body> 
+</html> 

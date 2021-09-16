@@ -1,0 +1,120 @@
+h2 {
+	color:red;
+}
+.u-header {
+	width: auto;
+	height:65px;
+	background-color:#010483;
+}
+
+.u-header .u-profile img {
+	width: 53px;
+    height: 54px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.u-header .u-name p {
+	text-transform:uppercase;
+	color:white;
+	padding-top: 10px;
+}
+
+.u-header .u-balance input {
+	background:#0BD9F9;	
+	text-align:center;
+	width:65px;
+	border: none;
+}
+
+.u-header .u-balance label {
+	color:#FFCC33;
+
+}
+
+/*====================user-history ========*/
+
+.user-history .heading {
+	background:#010483;
+
+}
+.user-history .heading h4 {
+	text-align: center;
+	color:#fff;
+	
+}
+
+.user-history .history-scroll {
+	width:auto;
+	height:300px;
+	overflow:scroll;
+
+}
+
+#user-history .hisdetails {
+	background: #0000ff;
+	width: auto;
+	height: 60px;
+	padding: 3px 17px 3px 11px;
+	margin: 5px 2px 1px 0px;
+}
+/*end history */
+.all-user .title h5 {
+	color:#fff;
+	text-align: center;
+}
+.all-user .title  {
+	background-color:#010483;
+	height:34px;
+}
+.all-user .user-scroll img {
+	width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.all-user .user-scroll p {
+	font-size:12px;
+	font-weight: bold;
+}
+
+.all-user .user-scroll {
+	width:auto;
+	height:250px;
+	overflow:scroll;
+}
+.all-user .user-box input {
+	width:120px;
+	height:34px;
+	border:2px solid  #5e88fc;
+	text-align:center;
+}
+.all-user .user-box button {
+  float: right;
+  padding: 6px 10px;
+  background: #5e88fc;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.all-user .user-box i{
+	font-size:18px;
+
+}
+.all-user .user-box h4 {
+	color:#010483;
+
+}
+
+
+/* =========== all transaction =============*/
+.all-transaction .transaction i {
+	font-size:42px;
+	color:#010483;
+}
+
+.all-transaction .transaction p {
+	font-size:12px;
+	font-weight: bold;
+}
